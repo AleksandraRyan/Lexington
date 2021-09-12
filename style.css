@@ -1,10 +1,12 @@
-body {
+html {
   background: linear-gradient(
-      109.6deg,
-      rgb(0, 37, 84) 11.2%,
-      rgba(0, 37, 84, 0.32) 100.2%
-    )
-    no-repeat center center/cover;
+    109.6deg,
+    rgb(0, 37, 84) 11.2%,
+    rgba(0, 37, 84, 0.32) 100.2%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -102,5 +104,18 @@ footer {
 
   footer {
     margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    height: 100vh;
+  }
+
+  .intro {
+    margin-top: -80px;
+  }
+  footer {
+    padding: 10px 0;
   }
 }
